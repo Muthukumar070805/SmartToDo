@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/main.js" defer></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>ToDo App</h1>
+    <div class="wrapper">
+      <form action="">
+        <input id="todo-input" placeholder="Write any thing hit enter to add" autocomplete="off">
+        <button id="add-button" type="submit" title="Add ToDo">ADD</button>
+      <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option id="critical" class="critical" value="1">Critical</option>
+          <option id="significant" class="significant" value="2" selected>Significant</option>
+          <option id="minor" class="minor" value="3">Minor</option>
+        </select>
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </div>
+    <form class="doneForm" action="">
+    <h1>Done List</h1> <button class="cls-btn" type="button">Clear</button>
+    <div class="box">
+      <ul id="done-list">
+      </ul>
+    </div>
+  </form>
+  </body>
+</html>
